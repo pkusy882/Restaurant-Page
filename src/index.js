@@ -1,3 +1,22 @@
 import '/src/style.css';
+import homePage from './home';
+import about from './about';
+import menu from './menu';
 
-alert("hey There");
+const homeBtn = document.querySelector(".home");
+const aboutBtn = document.querySelector(".about");
+const menuBtn = document.querySelector(".menu");
+
+homeBtn.addEventListener("click", ()=> {
+    homePage();
+});
+menuBtn.addEventListener("click", ()=>{
+    menu();
+});
+
+aboutBtn.addEventListener("click", ()=> {
+    about();
+});
+
+
+homePage();

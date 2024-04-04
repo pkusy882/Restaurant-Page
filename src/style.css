@@ -1,8 +1,52 @@
 
-body {
-    background-color: red;
+*{
+    text-align: center;
 }
-button{
-    background-color: green;
+body {
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 1fr 4fr;
+    grid-template-areas:
+        ". head ."
+        ". nav ."
+        ". cont .";
 }
 
+.Header{
+    grid-area: head;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+
+
+nav{
+    grid-area: nav;
+    text-align: center;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.content{
+    grid-area: cont;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    height: 60vh;
+}
+
+
+button{
+    background-color: green;
+    font-size: x-large;
+    flex-grow: 3;
+    padding: 5px;
+}
+li{
+    list-style-type: none;
+}
